@@ -1,0 +1,19 @@
+
+{
+  "name": "Unisoft Corporated",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Extension del aplicativo de filtro y estadisticas de mensajes dentro del grupo de trabajo de Unisoft Corporated.",
+  "background_page": "background.html",
+  "icons": {
+     "16": "icon16.png",
+     "48": "logop1.png",
+     "128": "logog1.png"
+            },
+  "browser_action": {
+  "default_title": "Unisoft Corporated",
+  "default_icon": "icon.png",
+  "default_popup": "unisoft.html"
+}
+
+}
