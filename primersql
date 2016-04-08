@@ -1,0 +1,5 @@
+﻿Create table Proyectos (
+	nombre_p VARCHAR(20) not null,
+	descrip_p VARCHAR(40) not null,
+	PRIMARY KEY (nombre_p));
+	

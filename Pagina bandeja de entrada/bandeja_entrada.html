@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+				<title>BANDEJA DE ENTRADA</title>
+				<meta charset = "UTF-8" />
+				<link rel="stylesheet" href="bandeja_entrada.css">
+			
+				<script type="text/javascript">
+						function mostrar(){
+						document.getElementById('contactos').style.display = 'block';
+					    }
+						function ocultar(){
+						document.getElementById('contactos').style.display = 'none';
+						}
+						function Contacto(){
+						document.getElementById('contactos').style.display = 'block';
+					    }
+						
+				</script>
+	</head>
+	
+	<body>
+            <header>
+					
+            </header>
+        
+				<section id = "contenedor">
+				<div id ="panelizq">
+				
+				<div id="foto"  >
+				</div>
+				
+				<div id="info" >
+				<p> <br></br><b>Cristian Alba</b>  Desarrollador</p>
+				</div>
+				<div id = "filtro_mensaje">
+				
+				<ul>
+			
+			
+			<li>
+			<a href="http://www.google.es">
+				<div class="barra"></div>
+				<p class="menu">Recibidos</p>
+			</a>	
+			</li>
+			
+
+
+			<li>
+			<a href="http://www.google.es">
+				<div class="barra"></div>
+				<p class="menu">Enviados</p>
+				</a>
+			</li>
+
+
+
+			<li>
+			<a href="http://www.google.es">
+				<div class="barra"></div>
+				<p class="menu">Otro</p>
+			</a>	
+			</li>
+
+		
+		</ul>
+				
+				
+				</div>
+				</div>
+				
+				</div>
+				
+				<div id = "panelcent">
+				<div id = "cabecera">
+					<p> CABECERA</p>
+				</div>
+				<div id = "contacto">
+					<label>UNISOFT CORPORATED</label>
+					<input type="button" value="Mostrar" onClick="mostrar()"> 
+					<input type="button" value="Ocultar" onClick="ocultar()">
+				
+				</div>
+				<div id = "contactos"  style='display:block'>
+				
+					<div id= "persona">
+						<div id ="nombre"><p id = "con">Laura Céspedes</p></div>
+						<div id ="correo"><p id= "con">cristina.9613@hotmail.com</p></div>
+						<div id ="acciones">
+							<a href= "Principal.html"><img   src="editar.png" alt > </a>
+							<a href= "Principal.html"><img   src="eliminar.png" alt > </a>
+							<input type="button" value="Generar" onClick="Contacto()">
+						</div>
+					</div>
+				
+				
+				
+				</div>
+				<div id = "botonbandeja">
+					<a href= "Principal.html"><img  id "btnban" src="volver.png" alt > </a>
+					<a href= "Principal.html"><img  id "btnban" src="siguiente.png" alt > </a>
+					<a href= "Principal.html"><img  id "btnban" src="actualizar.png" alt > </a>
+					<input type="text" id="buscador" placeholder="Buscar">
+				</div>
+				<div id = "bandeja">
+					<p> <br></br><b>Bandeja de entrada</b></p>
+				</div>
+					<input type="button" value="Estadisticas de interaccion" id ="estadistica"> 
+					<a href= "Principal.html"><img id="añadir" value = "Agregar integrante" src="imagen1.png" alt  > </a>
+				</div>
+				
+				
+				
+				
+				</section>				
+            
+			
+            
+			 
+
+            <footer>
+            </footer>
+					
+				
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Formulario Master</title>
+	<!--<script type="text/javascript" src="foto.jsp"></script>-->
+    <link href="master.css" rel="stylesheet" />
+</head>
+<body>
+    <form  class="contact_form" action="#" id="contact_form" runat="server">
+        <div  id="from">
+            <ul>
+			<div class="proyecto">
+				
+                <li>
+                    <h2>Master</h2>
+                    <span class="required_notification">* Datos requeridos</span>
+                </li>
+				</div>
+				<div class="fondo">
+				
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" placeholder="John Doe" required />
+                </li>
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="info@developerji.com" required />
+                    <span class="form_hint">Formato correcto: "name@something.com"</span>
+                </li>
+				<!--
+                <li>
+                    <label for="website">Sitio web:</label>
+                    <input type="url" name="website" placeholder="http://developerji.com" required pattern="(http|https)://.+" />
+                    <span class="form_hint">Formato correcto: "http://developerji.com"</span>
+                </li>-->
+				<li>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="telefono" placeholder="3101231234" required  />
+                    
+                </li>
+                
+				
+				<li>
+				<label for="sexo">Sexo: </label>
+				<select  id="sexo" name="sexo">
+                <option value="">Elige una opcion</option>
+                <option value="m">Femenino</option>
+                <option value="h">Masculino</option>
+				</select><br />
+				</li>
+                <li>
+                    <button class="submit" type="submit">Crear master</button>
+					<button class="submit" type="button" onclick=" location.href='formulario.html' " >Cancelar</button>
+                </li>
+            </ul>
+			
+					<div class="foto">
+					
+					<label> Insertar imagen:</label>
+					<!--como modifico para que este input no se modifique como los demas-->
+					<input class="archivo" type="file" id="files" name="files[]" />
+					<output id="list"></output>
+					
+					</div>
+			</div>
+			<script>
+              function archivo(evt) {
+                  var files = evt.target.files; // FileList object
+             
+                  // Obtenemos la imagen del campo "file".
+                  for (var i = 0, f; f = files[i]; i++) {
+                    //Solo admitimos imágenes.
+                    if (!f.type.match('image.*')) {
+                        continue;
+                    }
+             
+                    var reader = new FileReader();
+             
+                    reader.onload = (function(theFile) {
+                        return function(e) {
+                          // Insertamos la imagen
+                         document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                        };
+                    })(f);
+             
+                    reader.readAsDataURL(f);
+                  }
+              }
+             
+              document.getElementById('files').addEventListener('change', archivo, false);
+      </script>
+					
+        </div>
+    </form>
+	<footer id="foter">
+	
+	</footer>
+</body>
+</html>
