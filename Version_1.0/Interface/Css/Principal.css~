@@ -1,0 +1,117 @@
+
+*{
+	
+	margin:0;
+	padding:0;
+	}
+	
+	@font-face{
+		
+		font-weight:normal;
+		font-style:normal;
+		
+	}
+	
+	body{	
+	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,e9e9ce+100;Wax+3D+%232 */
+background: rgb(252,255,244); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 ); /* IE6-9 */
+
+		font-family:cursive	,Comic Sans;
+	}
+	
+	h1{
+		color:#F60;
+		margin:0.25em auto;
+		text-align:center;
+		font-size:1.0em;
+		text-shadow:5px 5px 10px rgba(255,255,255,0.5);
+	}
+	header{
+		background-image:url("logo.jpg");
+		border-radius:0.5em;
+		margin:0.5em auto;
+		width:1081px;
+		height:50px;
+		padding:0.25em;
+		text-align:center;
+	}
+	nav{
+		margin:100px auto;
+		width:1200px;
+		height:120px;
+		
+	}
+	div.menu{
+		width: 200px;
+		height: 50px;
+		float:left;
+		-webkit-transition: height .4s;
+	}
+	
+	img.icon{
+		display: block;
+		margin:40px auto;
+		background-color: rgba(255,255,255,.15);
+		width:70px;
+		padding:20px;
+		-webkit-border-radius: 70%;
+		-webkit-box-shadow: 0px 0px 0px 100px rgba(255,255,255,0);
+		-webkit-transition:box-shadow .4s;
+	}
+	p.texto{
+		text-align : justify;
+		font-size: 1.0em;
+		color:black;
+		text-align: center;
+		padding-top:10px;
+		opacity: .6;
+		-webkit-transition: padding-top .4s;
+	}
+	div.menu:hover{
+		height:250px;
+	}
+	div.menu:hover p.texto{
+		padding-top: 30px;
+		opacity: 1;
+	}
+	div.menu:hover img.icon{
+		-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+	}
+	section#contenedor{
+		margin:0.2em auto;
+		max-width:960px;
+		padding:0;
+		text-align:center;
+	}
+	section#principal{
+		border-radius:0.5em auto;
+		display:inline-block;
+		margin:0.25em auto;
+		max-width:960px;
+		max-height:150px;
+		padding:0.25em;
+		text-align:center;
+		vertical-align:top;
+		width:800px;
+	}	
+	article{
+		border-radius:0.5;
+		height:140px;
+		padding:0.25em;
+		width:800px;
+	}
+	
+	footer{
+		background-image:url("fondo.jpg");
+		border-radius:0.5em;
+		margin:0.2em auto;
+		width:750px;
+		padding:0.25em;
+		text-align:center;
+		height:80px;
+	}
