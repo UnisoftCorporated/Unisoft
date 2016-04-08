@@ -1,7 +1,0 @@
-Create table Master (
-	id_m int,
-	nombre_m VARCHAR(20) not null,
-	email_m VARCHAR(40) not null,
-	telefono_m int not null,
-	foto bytea,
-	PRIMARY KEY (id_m));
