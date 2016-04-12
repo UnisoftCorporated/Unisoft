@@ -15,4 +15,4 @@ Versión actual del proyecto.
 
 > Se está trabajando con lenguaje **JavaScript**.
 
-[Estándar de codificación](https://github.com/UnisoftCorporated/Unisoft/wiki/Est%C3%A1ndar-de-codificacion)
+Aqui se encuentra el [Estándar de codificación] utilizado(https://github.com/UnisoftCorporated/Unisoft/wiki/Est%C3%A1ndar-de-codificacion)
