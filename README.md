@@ -8,7 +8,7 @@ Esta versión no está en uso.
 
 > Esta versión se compone de interfaces realizadas en **HTML5**, archivos en lenguaje **Python** y archivos **SQL** para el tratamiento de información.
 
- Aquí se encuentran la[Documentación e historias de usuario.](http://example.com "Mensaje del Atributo Título") de la versión 1.0.
+ Aquí se encuentran la [Documentación e historias de usuario.](http://example.com "Mensaje del Atributo Título") de la versión 1.0.
 
 #### Versión 2.0
 Versión actual del proyecto.
