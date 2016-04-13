@@ -5,48 +5,45 @@
 
 /* === Form Typography === */
 
-
-
 /*modifica la palabra contacto*/
 h2{
-		color:#FFFFFF;
-		margin:0.25em auto;
-		text-align:center;
-		font-size:3.0em;
-		text-shadow:5px 5px 10px rgba(255,255,255,0.5);
-		margin: 0;
-		display: inline;
-	}
-	/*posicion de la foto agregada*/
-div.foto{
-	
-		position: absolute;
-		left : 450px;
-		top  : 70px;
-		text-align:left;
-		  
-}
-	/*color a la parte de contactos*/
-div.proyecto{
-	background:#2E64FE;
-	align:center; 
-	
-}
-/*color fondo de el formulario*/
-div.fondo{
-	background:#FFFFFF;
-	align:center; 
-}
-/*posicion de el formulario*/
-#from {
-  position: absolute;
-  left : 350px;
-  top  : 150px;
-  width: 550px;
-  text-align:left;
-  
+    color:#FFFFFF;
+    margin:0.25em auto;
+    text-align:center;
+    font-size:3.0em;
+    text-shadow:5px 5px 10px rgba(255,255,255,0.5);
+    margin: 0;
+    display: inline;
 }
 
+/*posicion de la foto agregada*/
+div.foto{
+    position: absolute;
+    left : 450px;
+    top  : 70px;
+    text-align:left;
+}
+
+/*color a la parte de contactos*/
+div.proyecto{
+    background:#2E64FE;
+    align:center; 
+}
+
+/*color fondo de el formulario*/
+div.fondo{
+    background:#FFFFFF;
+    align:center; 
+}
+
+/*posicion de el formulario*/
+#from{
+    position: absolute;
+    left : 350px;
+    top  : 150px;
+    width: 550px;
+    text-align:left;
+}
 
 /* === List Styles === */
 
@@ -58,6 +55,7 @@ div.fondo{
     margin: 0px;
     padding: 0px;
 }
+
 /*posicion y estilo de lo que esta dentro del el ul*/
 .contact_form li {
     padding: 12px;
@@ -93,19 +91,17 @@ div.fondo{
 }
 
 .contact_form input.archivo {
-   
-	border: 0px solid #aaa;
+    border: 0px solid #aaa;
     border-radius: 0px;
-	background: #FFFFFF;url(Images/Invalid.png) no-repeat 98% center;
-        box-shadow: 0 0 5px #FFFFFF;;
-        border-color: #FFFFFF;;
+    background: #FFFFFF;url(Images/Invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #FFFFFF;;
+    border-color: #FFFFFF;;
 }
+
 /*acomodar los botones*/
 .contact_form button {
     margin-left: 156px;
 }
-
-
 
 /* form element visual styles */
 
@@ -121,15 +117,14 @@ div.fondo{
     transition: padding .25s;
 }
 
-    /* === HTML5 validation styles === */
+/* === HTML5 validation styles === */
 	
-		
 /*sombrea los input*/
-    .contact_form input:focus:invalid {
-        background: #fff url(Images/Invalid.png) no-repeat 98% center;
-        box-shadow: 0 0 5px #0040FF;
-        border-color: #0040FF;
-    }
+.contact_form input:focus:invalid {
+    background: #fff url(Images/Invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #0040FF;
+    border-color: #0040FF;
+}
 
 /* === Form hints === */
 
@@ -150,10 +145,8 @@ div.fondo{
     display: inline;
 }
 
-
 .contact_form input:required:valid + .form_hint {
     background: #28921f;
-	
 }
 
 /* === Button Style === */
@@ -164,62 +157,51 @@ button.submit {
     color: white;
     font-weight: bold;
     padding: 6px 20px;
-    /*text-align: center;*/
     text-shadow: 0 -1px 0 #396715;
-	top  : 650px;
+    top  : 650px;
 }
-/*para que resalte*/
-    button.submit:hover {
-        opacity: .85;
-        cursor: pointer;
-    }
 
+/*para que resalte*/
+button.submit:hover {
+    opacity: .85;
+    cursor: pointer;
+}
 
 /*imagen de abajo*/
-	footer{
-		background-image:url("Images/Fondo.png");
-		border-radius:0.5em;
-		margin:0.2em auto;
-		width:750px;
-		padding:0.25em;
-		/*text-align:center;*/
-		height:80px;
-		position: absolute;
-		left : 350px;
-		top  : 550px;
-		text-align:left;
-	}
+
+footer{
+    background-image:url("Images/Fondo.png");
+    border-radius:0.5em;
+    margin:0.2em auto;
+    width:750px;
+    padding:0.25em;
+    height:80px;
+    position: absolute;
+    left : 350px;
+    top  : 550px;
+    text-align:left;
+}
 	
 
-	body{	
+body{	
 	
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,e9e9ce+100;Wax+3D+%232 */
-		font: 14px/21px "Andale Mono", monospace;
-		background: rgb(252,255,244); /* Old browsers */
-		background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6-15 */
-		/*background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10-25,Safari5.1-6 */
-		/*background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,e9e9ce+100;Wax+3D+%232 */
+    font: 14px/21px "Andale Mono", monospace;
+    background: rgb(252,255,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6-15 */
+}
 
-		/*font-family:cursive	,Comic Sans;
-	}*/
-	}
-	
-	
-	select{
-	background: #eee url(Images/Arrow.png);
-   	padding: 10px;
-   	font-size: 16px;	
-   }
-  
+select{
+    background: #eee url(Images/Arrow.png);
+    padding: 10px;
+    font-size: 16px;	
+}
 
-		
-	.thumb{
-     height: 160px;
-     border: 1px solid #000;
-	margin: 10px 5px 0 0;
-	 position: absolute;
-	 
-	}
+.thumb{
+    height: 160px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+    position: absolute;
+}
 
 	
