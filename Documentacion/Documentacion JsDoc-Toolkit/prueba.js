@@ -2,7 +2,7 @@
  * @param {number} radius The radius of the circle.
  * @return {number}
  */
-function getArea(radius) {
+function GetArea (radius) {
     var areaVal;
     areaVal = Math.PI * radius * radius;
     return areaVal;
