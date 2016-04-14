@@ -7,9 +7,9 @@ var SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
 */
 function checkAuth() {
 	gapi.auth.authorize({
-	  'client_id': CLIENT_ID,
-      'scope': SCOPES.join(' '),
-      'immediate': true
+	'client_id': CLIENT_ID,
+        'scope': SCOPES.join(' '),
+        'immediate': true
 	}, 
 	handleAuthResult);
 }
