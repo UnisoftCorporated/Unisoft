@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+    </head>
+    <body>
+        <!--Add a button for the user to click to initiate auth sequence -->
+        <button id="authorize-button" style="visibility: hidden">Autorizar</button>
+        <div id="content"></div>
+        <h1>Filtrar mensajes usando IDs</h1>
+        <script type="text/javascript">
+            // ID del cliente para acceder a una aplicación web usando la consola de desarrollo de gmail.
+            var ID_CLIENTE = '809466617807-82ulq5gstd6l2bfrndutji0to1ink7ba.apps.googleusercontent.com';
+            // Permisos del usuario.
+            var SCOPES = 'https://www.googleapis.com/auth/gmail.readonly';
+            function handleClientLoad () {
+                window.setTimeout(checkAuth,1);
+            }
+            function checkAuth () {
+                gapi.auth.authorize({
+                    client_id: ID_CLIENTE,
+                    scope: SCOPES,
+                    immediate: true,
+                    cookie_policy: 'single_host_origin'}, handleAuthResult);
+            }
+            function handleAuthResult (authResult) {
+                var authorizeButton = document.getElementById('authorize-button');
+                if (authResult && !authResult.error) {
+                    authorizeButton.style.visibility = 'hidden';
+                    makeApiCall();
+                } else {
+                    authorizeButton.style.visibility = '';
+                    authorizeButton.onclick = handleAuthClick;
+                }
+            }
+            function handleAuthClick (event) {
+                gapi.auth.authorize({
+                    client_id: ID_CLIENTE,
+                    scope: SCOPES,
+                    immediate: false, 
+                    cookie_policy: 'single_host_origin'
+                }, handleAuthResult);
+                return false;
+            }
+            function makeApiCall () {
+                gapi.client.load('gmail', 'v1', function() {
+                    consultarRecibidos();
+                    consultarEnviados();
+                });
+            }
+            function appendPre (message) {
+                var pre = document.getElementById('output');
+                var textContent = document.createTextNode(message + '\n');
+                pre.appendChild(textContent);
+            }
+            //Obtiene la ID de los mensajes recibidos de una persona determinada
+            function consultarRecibidos (){
+                var user_id = "me";
+                var query = "from: cristinacespedes01@gmail.com"
+                var request = gapi.client.gmail.users.messages.list({
+                    'userId': user_id,
+                    'q': query
+                });
+                request.execute(function(resp) {
+                    var messages = resp.messages;
+                    appendPre("El filtro por persona retorna " + messages.length + " mensajes recibidos "+query+"\n");
+                    for(var i = 0; i < messages.length; i++) {
+                        appendPre(i +": "+ messages[i].id);
+                    }
+                    appendPre("\n");
+                });
+            }
+            //Obtiene la ID de los mensajes enviados de una persona determinada
+            function consultarEnviados (){
+                var user_id = "me";
+                var query = "in:sent fabianwf8@gmail.com"
+                var request = gapi.client.gmail.users.messages.list({
+                    'userId': user_id,
+                    'q': query
+                });
+                request.execute(function(resp) {
+                    var messages = resp.messages;
+                    appendPre("El filtro por persona retorna " + messages.length + " mensajes enviados "+query+"\n");          
+                    for(var i = 0; i < messages.length; i++) {
+                        appendPre(i +": "+ messages[i].id);
+                    }
+                    appendPre("\n");
+                });
+            }
+        </script>
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+        <pre id="output"></pre>
+    </body>
+</html>
