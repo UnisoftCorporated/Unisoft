@@ -2,52 +2,6 @@
     Funciones basicas para la extraccion de los mensajes de Gmail con GmailApi. 
     */   
 
-
-        function handleClientLoad () {
-            gapi.client.setApiKey(apiKey);
-            window.setTimeout(checkAuth, 1);
-        }
-        // Verifica clientId.
-        function checkAuth () {
-            gapi.auth.authorize({
-            client_id: clientId,
-            scope: scopes,
-            immediate: true
-	  
-        }, handleAuthResult);
-	
-        }
-        // Verifica autorizacion del usuario.
-        function handleAuthClick () {
-            gapi.auth.authorize ( {
-            client_id: clientId,
-            scope: scopes,
-            immediate: false
-            }, handleAuthResult);
-            return false;
-        }
-        // Respuesta a las autorizaciones.
-        function handleAuthResult (authResult) {
-            if(authResult && !authResult.error) {
-            loadGmailApi();
-            $('#authorize-button').remove();
-            $('.table-inbox').removeClass("hidden");
-            }
-
-            else {
-            $('#authorize-button').removeClass("hidden");
-            $('#authorize-button').on('click', function(){
-            handleAuthClick();
-            });
-            }
-
-        }
-
-        // Carga de funciones de GMAIL API
-        function loadGmailApi() {
-            gapi.client.setApiKey("");
-            gapi.client.load('gmail', 'v1', displayInbox);
-        }
         // Lista una cantidad definida de mensajes de entrada.
         function displayInbox() {
             var request = gapi.client.gmail.users.messages.list({
