@@ -1,7 +1,8 @@
 function fechas() {
         var request = gapi.client.gmail.users.messages.list({
           'userId': 'me',
-          'labelIds': 'SENT'          
+          'labelIds': 'SENT',
+          'maxResults': 100
         });
         request.execute(function(response) {
 			$.each(response.messages, function() {
