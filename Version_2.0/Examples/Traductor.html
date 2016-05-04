@@ -1,0 +1,18 @@
+<!--Esta es la estructura básica para agregar el complemento del traductor de google, no cambiar posiciones o no funcionará.
+	El archivo element.js es indispensable para que funcione correctamente-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="element.js"></script>
+		<script type="text/javascript">
+		function googleTranslateElementInit() {
+  			new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'de,en,es,fr,it,la,pt,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+	</script>
+	</head>
+	<body>
+		<div id="google_translate_element"></div>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<p>Esta es una prueba usando el traductor de google</p>
+	</body>
+</html>
