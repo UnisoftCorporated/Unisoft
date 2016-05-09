@@ -1,0 +1,85 @@
+ <!-- Panel izqiuerdo de navegación-->
+ <section class="sidebar">
+    <ul class="sidebar-menu">
+	    <li class="header">MENÚ DE NAVEGACIÓN</li>
+			<!-- Enlace a la pagina de integrantes -->
+			 <li><a href="integrantes.html"><i class="fa fa-user"></i> <span>Integrantes</span></i></a></li>
+	</ul>
+</section>
+
+ <!-- Caja estadística basica general de todo el equipo-->
+ <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box bg-green">
+        <span class="info-box-icon"><i class="fa fa-send-o"></i></span>
+        <div class="info-box-content">
+            <span class="info-box-text">Mensajes Enviados</span>
+            <span class="info-box-number">267</span>
+        </div>
+    </div>
+</div>
+ <!-- Caja con integrantes del equipo(basico)-->
+ <div class="col-md-6">
+    <div class="box box-danger">
+	    <!-- Caja con titulo-->
+        <div class="box-header with-border">
+            <h3 class="box-title" ><b><i><font face = 'candara'>Integrantes del Proyecto</font></i></b></h3>
+            <div class="box-tools pull-right"></div>
+        </div>
+		<!-- Caja con nombre y foto del integrante-->
+        <div class="box-body no-padding">
+            <ul class="users-list clearfix">
+                <li>
+                    <img src="dist/img/avatar.png" alt="User Image">
+                    <a class="users-list-name" >Fabián</a>
+                 </li>
+            </ul>
+        </div>
+		<!-- Caja con enlace a página integrantes-->
+        <div class="box-footer text-center">
+            <a href="integrantes.html" class="uppercase">Ver todos los integrantes</a>
+        </div>
+    </div>
+</div>
+<!-- Banner con logo -->
+<div class="col-md-6">
+    <div class="box box-solid">
+        <div class="box-body"  style = "height:300px">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicador de cantidad de imagenes -->
+                <ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                </ol>
+				<!-- Dirección de la imagen y su atributo -->
+                <div class="carousel-inner">
+					<div class="item active">
+						<img src="descarga2.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                      First Slide
+                    </div>
+                  </div>
+                </div>
+				<!-- Flechas de dirección(izq-der)-->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                  <span class="fa fa-angle-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                  <span class="fa fa-angle-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Caja con descripción de la página -->
+<div class="col-md-6">
+    <div class="box box-widget">
+        <div class="box-body"  style="height: 320px">
+              <!-- Función javascript  que contiene el texto-->
+              <script type = "text/javascript">
+				document.writeln(descri);
+			  </script>
+        </div>
+    </div>
+</div>
+ 
