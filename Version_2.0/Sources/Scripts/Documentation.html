@@ -1,72 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Documentación Unisoft Corporated</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" charset="utf-8" src="Documentacion.js"></script>
-    <!--Google translate-->
-    <script type="text/javascript" src="element.js"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'de,en,es,fr,it,la,pt,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-      }
-    </script>
-  </head>
-  <!--===============================================-->
-  <body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy" onload="cargarTexto()">
-    <div class="wrapper">
-      <header class="main-header">
-        <!-- Logo -->
-        <!-- Logo -->
-        <a href="../Principal.html" class="logo">
-          <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>U</b>NI</span>
-          <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Unisoft</b>Corporated</span>
-        </a>
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Navegación</span>
-          </a>
-          <a href="#control-sidebar" class="sidebar-toggle" data-toggle="control-sidebar" role="button">
-            <span class="sr-only">Barra Lateral Derecha</span>
-          </a>
-          <a href="https://github.com/UnisoftCorporated" class="sidebar-toggle" role="button">
-            <span class="sr-only">Github</span>
-          </a>
-          <!-- Navbar Right Menu -->
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-              <!--Google translate-->
-              <li>
-                <a id="google_translate_element"></a>
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!-- Left side column. contains the logo and sidebar -->
-      <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <div class="sidebar" id="scrollspy">
-          <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="nav sidebar-menu">
-            <li class="header">TABLA DE CONTENIDO</li>
+	<script type="text/javascript" charset="utf-8" src="Documentacion.js"></script>
+	<!-- ============================================================= -->
+        <ul class="nav sidebar-menu">
+        	<li class="header">TABLA DE CONTENIDO</li>
             <li class="active"><a href="#introduction"><i class="fa fa-circle-o"></i> Introducción</a></li>
             <li class="treeview" id="scrollspy-components">
               <a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Componentes</a>
@@ -81,62 +16,35 @@
                 <li><a href="#principal"> Principal</a></li>
                 <li><a href="#integrantes">Integrantes</a></li>
                 <li><a href="#individuales">Gráficas Individuales</a></li>
-		<li><a href="#generales">Gráficas Generales</a></li>
-		<li><a href="#b_entrada">Bandeja de Entrada</a></li>
-		<li><a href="#documentacion">Documentación</a></li>
+				<li><a href="#generales">Gráficas Generales</a></li>
+				<li><a href="#b_entrada">Bandeja de Entrada</a></li>
+				<li><a href="#documentacion">Documentación</a></li>
               </ul>
             </li>
             <li><a href="#download"><i class="fa fa-circle-o"></i> Descargas</a></li>
           </ul>
         </div>
-        <!-- /.sidebar -->
-      </aside>
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-          <h1>
-            Documentación Unisoft Corporated
-            <small>Versión actual 2.0.0</small>
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Principal</a></li>
-            <li class="active">Documentación</li>
-          </ol>
-        </div>
-        <!--========================================-->
-        <!-- Main content -->
-        <div class="content body">
-          <section id="introduction">
-            <h2 class="page-header"><a href="#introduction">Introducción</a></h2>
-            <p class="lead">
-                <script type="text/javascript">
-                  document.writeln(introduccion);
-                </script>
-            </p>
-          </section><!-- /#introduction -->
-
+<!-- ============================================================= -->        
+	      <section id="introduction">
+	        <h2 class="page-header"><a href="#introduction">Introducción</a></h2>
+	        <!--Funcion usada para llamar a cada variable javascript en cada section-->
+	        <p class="lead">
+	            <script type="text/javascript">
+	              document.writeln(introduccion);
+	            </script>
+	        </p>
+	      </section>
 <!-- ============================================================= -->
-
 <section id="components" data-spy="scroll" data-target="#scrollspy-components">
   <h2 class="page-header"><a href="#components">Componentes</a></h2>
   <div class="callout callout-info lead">
     <h4>Atención!</h4>
-    <p>
-      <script type="text/javascript">
-        document.writeln(alerta);
-      </script>
-    </p>
   </div>
 </section>
   <!--======================================================================-->
 <section >
   <h3 id="component-main-header">Menú de Cabecera</h3>
-  <p class="lead">
-    <script type="text/javascript">
-      document.writeln(cabecera);
-    </script>
-  </p>
+  <!--Cuadro usado para agregar imagenes dentro de la documentacion-->
   <div class="box box-danger">
     <div class="box-header with-border">
       <h3 class="box-title">Página Traducida</h3>
@@ -154,11 +62,7 @@
   <!-- ===================================================================== -->
 <section >
   <h3 id="component-sidebar">Barra Lateral Izquierda</h3>
-  <p class="lead">
-    <script type="text/javascript">
-      document.writeln(barra_lateral_izquierda);
-    </script>
-  </p>
+  <!--Boton que activa la barra lateral-->
   <p class="lead">
     <button class="btn btn-primary" data-toggle="offcanvas">Barra Lateral Izquierda</button><br>
   </p>
@@ -166,67 +70,18 @@
   <!-- ===================================================================== -->
 <section >
   <h3 id="component-control-sidebar">Barra Lateral Derecha</h3>
-  <p class="lead">
-    <script type="text/javascript">
-      document.writeln(barra_lateral_derecha);
-    </script>
-  </p>
-  <p class="lead">
-  <button class="btn btn-primary" data-toggle="control-sidebar">Barra Lateral Derecha</button><br>
-  </p>
 </section>
 <!--====================================================================-->
 <section id="menu">
   <h2 class="page-header"><a href="#menu">Menú Principal</a></h2>
-  <p class="lead">
-    <script type="text/javascript">
-      document.writeln(menu);
-    </script>
-  </p>
 </section>
 <!--====================================================================-->
 <section >
   <h3 id="principal">Principal</h3>
-  <p class="lead">
-    <script type="text/javascript">
-      document.writeln(principal);
-    </script>
-  </p>
-  <div class="box box-danger">
-    <div class="box-header with-border">
-      <h3 class="box-title">Página Principal</h3>
-      <div class="box-tools pull-right">
-        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-        </button>
-        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-      </div>
-    </div>
-    <div class="box-body">
-  <img id="img_prin" src="principal.png"></img>
-  </div>
-  </div>
 </section>
 <!--====================================================================-->
 <section >
   <h3 id="integrantes">Integrantes</h3>
-  <p class="lead">
-    <script type="text/javascript">
-      document.writeln(integrantes);
-    </script>
-  </p>
-  <div class="box box-danger">
-    <div class="box-header with-border">
-      <h3 class="box-title">Página de Integrantes</h3>
-      <div class="box-tools pull-right">
-        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-        </button>
-        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-      </div>
-    </div>
-    <div class="box-body">
-  <img id="img_int" src="integrantes.png"></img>
-  </div>
-  </div>
 </section>
 <!--====================================================================-->
 
@@ -234,14 +89,8 @@
   <h2 class="page-header"><a href="#download">Descargas</a></h2>
   <div class="callout callout-danger lead">
     <h4>Ayuda!</h4>
-    <p>
-	<script type="text/javascript">
-      document.writeln(tip);
-    </script>
-    </p>
   </div>
   <p class="lead">
-    <!--Descripcion-->
   </p>
   <div class="row">
     <div class="col-sm-6">
@@ -270,104 +119,3 @@
     </div><!-- /.col -->
   </div><!-- /.row -->
 </section>
-
-<!-- ============================================================= -->
-
-        </div><!-- /.content -->
-      </div><!-- /.content-wrapper -->
-
-      <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-          <b>Versión</b> 2.0.0
-        </div>
-        <strong>Este es un proyecto con propósitos educativos. <a href="http://unillanos.edu.co/index.php/">Universidad de los Llanos</a>.</strong> Copyright &copy; 2016.
-      </footer>
-
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <div class="pad">
-           <div class="box box-solid" style="max-width: 300px;">
-    <div class="box-body no-padding">
-      <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
-        <thead>
-          <tr>
-            <th style="width: 210px;">Color</th>
-            <th>Vista</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>Azul-Negro</code></td>
-            <td><a href="#" data-skin="skin-blue" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Azul-Blanco</code></td>
-            <td><a href="#" data-skin="skin-blue-light" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Amarillo-Negro</code></td>
-            <td><a href="#" data-skin="skin-yellow" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Amarillo-Blanco</code></td>
-            <td><a href="#" data-skin="skin-yellow-light" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Verde-Negro</code></td>
-            <td><a href="#" data-skin="skin-green" class="btn btn-success btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Verde-Blanco</code></td>
-            <td><a href="#" data-skin="skin-green-light" class="btn btn-success btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Morado-Negro</code></td>
-            <td><a href="#" data-skin="skin-purple" class="btn bg-purple btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Morado-Blanco</code></td>
-            <td><a href="#" data-skin="skin-purple-light" class="btn bg-purple btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Rojo-Negro</code></td>
-            <td><a href="#" data-skin="skin-red" class="btn btn-danger btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Rojo-Blanco</code></td>
-            <td><a href="#" data-skin="skin-red-light" class="btn btn-danger btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Blanco-Negro</code></td>
-            <td><a href="#" data-skin="skin-black" class="btn bg-black btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-          <tr>
-            <td><code>Blanco-Blanco</code></td>
-            <td><a href="#" data-skin="skin-black-light" class="btn bg-black btn-xs"><i class="fa fa-eye"></i></a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div><!-- /.box-body -->
-  </div><!-- /.box -->
-        </div>
-      </aside><!-- /.control-sidebar -->
-      <!-- Add the sidebar's background. This div must be placed
-           immediately after the control sidebar -->
-      <div class="control-sidebar-bg"></div>
-
-    </div><!-- ./wrapper -->
-
-    <!-- jQuery 2.2.0 -->
-    <script src="../plugins/jQuery/jQuery-2.2.0.min.js"></script>
-    <!-- Bootstrap 3.3.6 -->
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="../plugins/fastclick/fastclick.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="../dist/js/app.min.js"></script>
-    <!-- SlimScroll 1.3.0 -->
-    <script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-    <script src="docs.js"></script>
-  </body>
-</html>
