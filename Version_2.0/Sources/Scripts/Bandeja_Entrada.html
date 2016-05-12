@@ -1,0 +1,30 @@
+
+<!-- se modifica el menu de seleccion para filtrar los mensajes que se muestran -->
+
+<li>
+    <a href="Bandeja.html">
+      <i class="fa fa-envelope"></i> <span>Bandeja de Entrada</span>
+    </a>
+		<ul class="treeview-menu">     
+      <li><a onclick="displayMessages('INBOX')">Mensajes Recibidos</a></li>
+      <li><a onclick="displayMessages('SENT')">Mensajes Enviados</a></li>
+    </ul>
+</li>
+
+<!-- Se agregan los diferentes filtros permitidos por la API de GMAIL para nistrar mensajes -->
+
+<div class="box-body no-padding">
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a  onclick="displayMessages('INBOX')"><i class="fa fa-inbox"></i> Inbox
+      <span class="label label-primary pull-right">12</span></a></li>
+      <li><a  onclick="displayMessages('SENT')"><i class="fa fa-envelope-o"></i> Sent</a></li>
+      <li><a onclick="displayMessages('DRAFT')"><i class="fa fa-file-text-o"></i> Drafts</a></li>
+      <li><a onclick="displayMessages('SPAM')"><i class="fa fa-filter"></i> Spam <span class="label label-warning pull-right">65</span></a>
+      </li>
+    <li><a onclick="displayMessages('TRASH')"><i class="fa fa-trash-o"></i> Trash</a></li>
+  </ul>
+</div>
+
+<!-- Se adiciona el boton para limpiar la pagina de los mensajes actuales (No afecta los mensajes en gmail) -->
+
+<button onclick="limpia()">Limpiar Vista</button>
