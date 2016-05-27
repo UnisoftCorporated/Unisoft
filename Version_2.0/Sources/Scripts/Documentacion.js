@@ -8,5 +8,10 @@ var barra_lateral_derecha = "La barra lateral derecha es un componente experimen
 var menu = "El menú principal está compuesto por la parte central de la aplicación. En este se muestra la descripción de la aplicación, los integrantes que la componen, la información gráfica de cada uno y de manera general, un buzón en el que se muestran los correos extraídos y por último la documentación o manual de usuario de la aplicación.";
 var principal = "En esta primera pestaña se describe la aplicación y el objetivo que tiene esta. También se presenta la información estadística extraída de manera general de los integrantes del equipo desarrollador, así como también a los integrantes que conforman el equipo de trabajo.";
 var integrantes = "En esta pestaña se muestran los integrantes que conforman el equipo de trabajo de manera más detallada, mostrando la información individual extraída de los correos. Al pulsar sobre cada uno de los integrantes se presentan las gráficas que muestran de una mejor manera la información extraída.";
+var g_in ="Esta pestaña muestra información individual con respecto a los mensajes enviados y recibidos de un integrante.";
+var gen ="Esta pestaña muestra la distribución general de los mensajes enviado con diferentes etiquetas diseñadas para obtener información, de las posibles situaciones que pueden presentarse en el desarrollo de un proyecto. ";
+var b_entrada ="En la bandeja de entrada, se pueden ver los mensajes recibidos de los integrantes del grupo con sus respectivas etiquetas.";
+
+
 /*Descargas*/
 var tip = "La plantilla usada fue desarrollada por el equipo <a href='http://almsaeedstudio.com'>Almsaeed Studio</a> y usada como base para poner en marcha la aplicación. Es de código abierto y puede ser descargada en el repositorio de dicho equipo.";
