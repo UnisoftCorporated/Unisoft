@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script src="Grafica_general.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src=autenticacion.js></script>		
+	<script src=Generales.js></script>	
+	<script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+</head>
+<div style="width:100%">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="authorize-div" style="display: none">
+		<span>Autoriza el uso a la API de Gmail</span>
+		<button id="authorize-button" onclick="handleAuthClick(event)">
+			Autorizar
+		</button>
+	</div>
+<body>
+</body>
+</html>
